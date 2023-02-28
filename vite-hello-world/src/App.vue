@@ -1,5 +1,24 @@
-<script setup>
-import HelloWorld from './components/HelloWorld.vue'
+
+
+<script>
+// 1. importare il componente
+import AppTitle from './components/AppTitle.vue'
+export default {
+  components: {
+    // 2. registrare il componente che abbiamo importato
+    AppTitle
+  },
+  data() {
+    return {
+      message: 'La mia prima app con Vite!'
+    }
+  },
+  methods: {
+    sayHello() {
+      console.log('Ciao Vite!')
+    }
+  }
+}
 </script>
 
 <template>
@@ -11,7 +30,15 @@ import HelloWorld from './components/HelloWorld.vue'
       <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
     </a>
   </div>
-  <HelloWorld msg="Vite + Vue" />
+  <div>
+    <h1>{{ message }}</h1>
+    <button @click="sayHello">Say Hello!</button>
+  </div>
+
+  <!-- 3. utilizzo il componente -->
+  <AppTitle></AppTitle>
+
+
 </template>
 
 <style scoped>
