@@ -32,7 +32,7 @@ export default {
   </div>
   <div>
     <h1>{{ message }}</h1>
-    <button @click="sayHello">Say Hello!</button>
+    <button @click="sayHello">Click</button>
   </div>
 
   <!-- 3. utilizzo il componente -->

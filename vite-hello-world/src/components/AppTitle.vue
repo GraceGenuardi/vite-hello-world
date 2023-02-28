@@ -8,7 +8,7 @@
   export default {
     data() {
       return {
-        description: 'testo della descrizione'
+        description: 'La mia prima app con Vite!'
       }
     }
   }
